@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+header h1 {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: normal;
+}
+/* Основной контейнер */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap; /* чтобы на маленьком экране уходило вниз */
+}
+/* Левая часть (форма) */
+.form-section {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    flex-shrink: 0;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+input[type="text"] {
+    padding: 5px;
+    width: 140px;
+    text-align: center;
+    font-size: 14px;
+}
+button {
+    background: #00cc66;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+button:hover {
+    background: #00aa55;
+}
+.image-section img {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+/* Правая часть (история) */
+.history-section {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 420px;
+    flex-shrink: 0;
+}
+table#tries {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 15px;
+}
+table#tries th, table#tries td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+}
+table#tries th {
+    background: rgba(255,255,255,0.2);
+    font-weight: bold;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease;
+}
+#closeModal {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#modalOkBtn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#modalOkBtn:hover {
+    background-color: #0056b3;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+#modalTitle{
+    color:rgba(80,9,9,0.82);
+    font-weight:bold;
+    margin-bottom: 10px;
+}
+
+#modalMessage {
+    font-size: 16px;
+    color: #333;
+}
