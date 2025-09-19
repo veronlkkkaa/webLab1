@@ -42,7 +42,7 @@ function saveArticle(event) {
     }
 
 
-    fetch("/fcgi-bin/app.jar?" + new URLSearchParams(formData).toString(), { method: "GET" })
+    fetch("/fcgi-bin/Server.jar?" + new URLSearchParams(formData).toString(), { method: "GET" })
         .then(response => {
             return response.text();
         })

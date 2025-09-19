@@ -9,14 +9,14 @@ import java.util.Properties;
 public class Main {
     private static final String HTTP_RESPONSE = """
             Content-Type: application/json
-                    
+                   \s
             {"code":"%d","result":"%s","x":"%d","y":"%.3f","r":"%.1f","time":"%s","scriptTime":"%.3f"}
-            """;
+           \s""";
     private static final String HTTP_ERROR = """
             Content-Type: application/json
-                    
+                   \s
             {"code":"%d","result":"%s","time":"%s","scriptTime":"%.3f"}
-            """;
+           \s""";
 
     public static void main(String[] args) {
 

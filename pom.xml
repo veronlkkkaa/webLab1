@@ -44,11 +44,11 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
-                            <Main-Class>labs.Main</Main-Class>
+                            <Main-Class>src\main\java\labs\Main</Main-Class>
                         </manifestEntries>
                     </archive>
                     <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                        <descriptorRef>lab-jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                 </configuration>
             </plugin>
